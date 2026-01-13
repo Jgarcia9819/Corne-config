@@ -14,6 +14,15 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_KEYBOARD_NAME
     default "corne"
 
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config BT_MAX_CONN
+    default 6
+
+config BT_MAX_PAIRED
+    default 6
+
 endif # SHIELD_CORNE_DONGLE
 
 
