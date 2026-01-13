@@ -14,7 +14,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 if ZMK_SPLIT_ROLE_CENTRAL
 
 config ZMK_KEYBOARD_NAME
-    default "Sweep"
+    default "corne"
 
 endif # ZMK_SPLIT_ROLE_CENTRAL
 
