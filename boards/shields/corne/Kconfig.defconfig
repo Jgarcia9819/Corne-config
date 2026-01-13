@@ -6,22 +6,13 @@ config ZMK_SPLIT
 endif # CORNE_DONGLE || CORNE_LEFT || CORNE_RIGHT
 
 
-if CORNE_DONGLE || CORNE_LEFT
+if CORNE_DONGLE
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-if ZMK_SPLIT_ROLE_CENTRAL
-
 config ZMK_KEYBOARD_NAME
     default "corne"
-
-endif # ZMK_SPLIT_ROLE_CENTRAL
-
-endif # CORNE_DONGLE || CORNE_LEFT
-
-
-if CORNE_DONGLE
 
 if ZMK_DISPLAY
 
