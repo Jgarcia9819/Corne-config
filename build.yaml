@@ -26,4 +26,7 @@ include:
 
     include:
   - board: xiao_ble
-    shield: sweep_dongle dongle_display
+    shield: corne_dongle dongle_display
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: corne_dongle_with_studio
