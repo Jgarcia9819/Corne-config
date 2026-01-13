@@ -1,6 +1,10 @@
 #include "corne.dtsi"
 
 / {
+    /* Delete the kscan0 node from corne.dtsi since it references pro_micro
+     * which doesn't exist on xiao_ble. The dongle uses mock_kscan instead. */
+    /delete-node/ kscan;
+
     chosen {
         zmk,kscan = &mock_kscan;
         zephyr,display = &oled;
